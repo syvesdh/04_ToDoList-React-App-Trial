@@ -1,0 +1,71 @@
+.todo-container {
+  color: rgb(22, 22, 22);
+  background-color: rgb(111, 224, 186);
+  padding: 2em;
+  border-radius: 25px;
+  border-width: 20px;
+  border-color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgba(127, 255, 212, 0.3);
+  will-change: box-shadow;
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.todo-container:hover {
+  box-shadow: 0 0 30px rgba(127, 255, 212, 0.8);
+}
+
+.todo-list {
+  padding-left: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 25em;
+  background-color: rgb(74, 148, 123);
+  margin: 5px 0px;
+  padding: 1px 5px;
+  border-radius: 5px;
+  border-bottom: 2px solid #142e32;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.text {
+  flex: 1;
+  overflow: hidden;
+}
+
+.task-button {
+  margin-left: 2px;
+}
+
+.add-button {
+  padding: 0px 5px;
+  margin-left: 5px;
+}
+
+.task-button {
+  padding: 0px 5px;
+  
+}
+
+.delete-button {
+  margin-left: 5px;
+}
+
+.clear-button {
+  margin-left: 5px;
+  padding: 0px 5px;
+  margin-left: 5px;
+}
+
+.input-card {
+  display: inline-block;
+  background-color: rgb(74, 148, 123);
+  margin: 5px 0px;
+  padding: 1px 5px;
+  border-radius: 5px;
+  border-bottom: 2px solid #142e32;
+}
