@@ -3,8 +3,13 @@ import "./ToDoList.css";
 
 function ToDoList() {
   const [tasks, setTasks] = useState(() => {
-    const savedTasks = localStorage.getItem("todolist-data");
-    return savedTasks !== "" ? JSON.parse(savedTasks) : [];
+    try {
+      const savedTasks = localStorage.getItem("todolist-data");
+      return savedTasks ? JSON.parse(savedTasks) : [];
+    } catch (error) {
+      console.error("Failed to parse tasks from localStorage:", error);
+      return []; // Fallback to an empty array
+    }
   });
   const [newTask, setNewTask] = useState("");
 
